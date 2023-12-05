@@ -51,5 +51,5 @@ print('''
 █▀▀ █░█ █▀▀ █▀▀ █▄▀ █▀▀ █▀▄   ▄▀█ █░░ █░░   █▀ █▀▀ ▀█▀ ▀█▀ █ █▄░█ █▀▀ █▀
 █▄▄ █▀█ ██▄ █▄▄ █░█ ██▄ █▄▀   █▀█ █▄▄ █▄▄   ▄█ ██▄ ░█░ ░█░ █ █░▀█ █▄█ ▄█''')
 
-loop = asyncio.get_event_loop()
+loop = asyncio.new_event_loop()
 loop.run_forever()
