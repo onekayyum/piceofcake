@@ -10,8 +10,8 @@
     "bot"
   ],
   "success_url": "https://t.me/blank_blankx",
-  "website": "https://t.me/ultroidofficial",
-  "repository": "https://github.com/sahildesai07/AutoAnime-1",
+  "website": "https://t.me/DevKayyum",
+  "repository": "https://github.com/onekayyum/piceofcake",
   "env": {
     "ENV": {
       "description": "Setting this to ANYTHING will enable VARs when in ENV mode",
