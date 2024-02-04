@@ -1,62 +1,46 @@
 {
-  "name": "AutoAnime-1",
-  "description": "Telegram's best Video Compress Bot",
-  "logo": "https://telegra.ph/file/b687febf32e4d583fb1d4.jpg",
-  "keywords": [
-    "telegram",
-    "best",
-    "video",
-    "compress",
-    "bot"
-  ],
-  "success_url": "https://t.me/blank_blankx",
-  "website": "https://t.me/DevKayyum",
-  "repository": "https://github.com/onekayyum/piceofcake",
-  "env": {
-    "ENV": {
-      "description": "Setting this to ANYTHING will enable VARs when in ENV mode",
-      "value": "ANYTHING"
+    "name": "Auto Anime",
+    "description": "Telegram File Renamer Bot ",
+    "logo": "https://graph.org/file/91ab4b346dddd0652958c.jpg",
+    "keywords": ["Anime Bot", "Mongo DB"],    
+    "repository": "https://github.com/Conan830/AutoAnime",
+    "env": {
+        "API_ID": {
+            "description": "Your APP ID From my.telegram.org ",
+            "value": ""
+        },
+        "API_HASH": {
+            "description": "Your API Hash From my.telegram.org ",
+            "value": ""
+        },
+        "BOT_TOKEN": {
+            "description": "Your Bot Token From @BotFather",
+            "value": ""
+        },
+        "ARCHIVE_CHANNEL": {
+            "description":"Your Archive Channel ID to store files (E.g -10037823545)"
+            "value": ""
+       },
+        "MONGO_DB": {
+            "description": "Your Mongo DB URL Obtained From mongodb.com",
+            "value": ""
+        },
+        "MAIN_CHANNEL": {
+            "description": "Your Main Channel Where Bot Will Update About Anime (E.g -10037823545)",
+            "value": ""
+        },
+        "MESSAGE_ID": {
+            "description": "Message Id of any message in main channel (E.g 40)",
+            "value": ""
+        },
+        "OWNER_ID": {
+            "description": "Your Telegram username. Without @.",
+            "value": ""
+        },
     },
-    "DATABASE_URL": {
-      "description": "Keep this default",
-      "value": "",
-      "required": false
-    },
-    "BOT_TOKEN": {
-      "description": "Your bot token, as a string. Get this from @BotFather",
-      "value": "",
-      "required": false
-    },
-    "API_ID": {
-      "description": "Get this value from https://my.telegram.org",
-      "value": "",
-      "required": false
-    },
-    "API_HASH": {
-      "description": "Get this value from https://my.telegram.org",
-      "value": "",
-      "required": false
-    },
-    "OWNER_ID": {
-      "description": "Your Bot Username. Without `@` before Username!",
-      "value": "",
-      "required": false
-    },
-    "MAIN_CHANNEL": {
-      "description": "Your Bot's Log Channel's Username. For Help ask in @linux_repo",
-      "value": "",
-      "required": true
-    },
-    "ARCHIVE_CHANNEL": {
-      "description": "Your Bot's Log Channel's Username. For Help ask in @linux_repo",
-      "value": "",
-      "required": true
-    },
-    "MESSAGE_ID": {
-      "description": "Allow only pre-defined users to use this bot as Sudo User. Separate with Space. Just for using Admin Commands.",
-      "value": "1666551439",
-      "required": false
-    }
-  },
-  "stack": "container"
-  }
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ]
+}
